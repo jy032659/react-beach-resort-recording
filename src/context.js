@@ -24,7 +24,8 @@ const RoomContext=React.createContext();
 //getData
 getData=async()=>{
     try {
-        let response=await Client.getEntries({content_type:"beachResortRoomExample"});
+        let response=await Client.getEntries({content_type:"beachResortRoomExample",
+    order:"fields.price"});
         console.log("response.items are", response)// convert response from an object to
         //an array
         let rooms=this.formatData(response.items)

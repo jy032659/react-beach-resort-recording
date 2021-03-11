@@ -1,27 +1,22 @@
 import React, { Component } from 'react'
-import {FaCocktail,FaHiking,FaShuttleVan,FaBeer} from "react-icons/fa"
+import {BsAwardFill,BsFillEyeFill,BsFillBarChartFill} from "react-icons/bs"
 import Title from './Title'
 export default class Services extends Component {
     state={services:[
         {
-            icon:<FaCocktail/>,
-            title:"free cocktails",
-            info:"lreoan eanei eaoneoa eanoi eanoi feanio einf eanfenaiofea.,feanioa"
+            icon:<BsAwardFill/>,
+            title:"User-friendly Interface",
+            info:"It will enable users to easily navigate to their desirable page and find out the price or availability information within a short time. It will also load fast on all devices to save users’ time. "
         },
         {
-            icon:<FaHiking/>,
-            title:"Endless Hiking",
-            info:"lreoan eanei eaoneoa eanoi eanoi feanio einf eanfenaiofea.,feanioa"
+            icon:<BsFillEyeFill/>,
+            title:"Easy- approach search engine",
+            info:"We offer various preference options for customers so that they can find their desirable rooms in a short time and it will help customers filter those unwanted rooms."
         },
         {
-            icon:<FaShuttleVan/>,
-            title:"Free shuttle",
-            info:"lreoan eanei eaoneoa eanoi eanoi feanio einf eanfenaiofea.,feanioa"
-        },
-        {
-            icon:<FaBeer/>,
-            title:"Strongest Beer",
-            info:"lreoan eanei eaoneoa eanoi eanoi feanio einf eanfenaiofea.,feanioa"
+            icon:<BsFillBarChartFill/>,
+            title:"Visualization",
+            info:"Enable customers to directly see the location of the hotel from the google map in our website so that they can determine whether the situation is suitable for them"
         }
     ]}
     render() {
@@ -31,7 +26,7 @@ export default class Services extends Component {
                 <div className="services-center">
                  {this.state.services.map((item,index)=>{
                      return <article key={index} className="service">
-                    <span>{item.icon}</span>
+                    <span className="icon">{item.icon}</span>
                     <h6>{item.title}</h6>
                     <p>{item.info}</p>
                      </article>

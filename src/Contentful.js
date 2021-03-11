@@ -1,6 +1,6 @@
 import {createClient} from 'contentful'
 export default createClient({
-    space:process.env.REACT_APP_API_SPACE,
-    accessToken:process.env.REACT_APP_ACCESS_TOKEN
+    space:"4i8q3evt1ywy",
+    accessToken:"T8nMvKLs0Ekc2hzVOaa4DX2NzjQArkeBMpE8UbMR_5c"
 
 })

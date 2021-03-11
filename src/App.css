@@ -108,8 +108,11 @@ h6 {
   outline: none;
 }
 .nav-icon {
-  font-size: 1.5rem;
+  font-size: 20rem;
   color: var(--primaryColor);
+}
+.icon{
+  font-size: 20 rem;
 }
 .nav-links {
   height: 0;
@@ -159,7 +162,7 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
+  background: url("./images/resort1.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -340,11 +343,12 @@ h6 {
   transition: all 0.3s linear;
 }
 .img-container:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(241, 243, 243, 0.8);
 }
 .img-container:hover img {
   opacity: 0.3;
 }
+
 .img-container:hover .price-top {
   opacity: 0;
 }
